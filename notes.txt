@@ -1,0 +1,26 @@
+Timing Result of extraLargeArray:
+doublerAppend 4.62501 ms (has the .push() method)
+doublerInsert 1.968665367 s (has the .unshift() method)
+
+Timing Result of largeArray:
+doublerAppend 1.056636 ms
+doublerInsert 14.915644 ms
+
+Timing Result of mediumArray:
+doublerAppend 200.676 μs
+doublerInsert 246.887 μs
+
+Timing Result of smallArray:
+doublerAppend 141.156 μs
+doublerInsert 74.166 μs
+
+Timing Result of tinyArray:
+doublerAppend 126.788 μs
+doublerInsert 57.445 μs
+
+In the extraLargeArray, largeArray, and mediumArray the in append function with the .push() method seemed to have the fastest runtime over the .unshift() method. 
+
+However, smallArray and tinyArray's append function runtimes were slower than the insert function due to the lesser input values. Pushing at the end of the array with bigger inputs was faster, but as the inputs got smaller, the runtime of pushing them to the end was slower. It was easier or faster to shift values and place new ones at the beginning because there were less values in the array to start with.
+
+The .push() method in the append function scales better because as the input values get bigger so does the runtime. Thus making the runtime complexity of the function O(n), linear. 
+
