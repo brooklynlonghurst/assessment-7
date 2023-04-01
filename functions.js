@@ -1,6 +1,6 @@
 //1) Sum Zero
 //   Runtime Complexity: O(n^2) quadratic because each time the inner loop iterates it will multiply by the outer loop.
-//   Space Complexity: O(n) linear because memory grows at a linear rate as the input length grows 
+//   Space Complexity: O(1) constant because memory does not grows with the input
 
 let array = [1, 2, 3]
 let value = false; 
@@ -18,7 +18,7 @@ for(let i = 0; i < array.length; i++){
 
 //2) Unique Characters
 //   Runtime Complexity: O(n^2) quadratic because each time the inner loop iterates it will multiply by the outer loop.
-//   Space Complexity: O(n) linear because there is memory being set with each new variable and it grows with each input that could get larger.
+//   Space Complexity: O(1) constant because memory does not grows with the input
 
 function hasUniqueChars(str){
     for (let i = 0; i < str.length; i++){
@@ -38,7 +38,7 @@ console.log(hasUniqueChars('Moonday'))
 
 //3) Pangram Sentence 
 //   Runtime Complexity: O(n) linear because there is a growing rate of sentence
-//   Space Complexity: O(n) linear because memory grows at a linear rate as the input length grows
+//   Space Complexity: O(1) constant because memory does not grow with the input
 
 function isPangram(sentence){
     let sentenceLowerCase = sentence.toLowerCase()
